@@ -1,0 +1,29 @@
+name: TaneSen
+options:
+  bundleIdPrefix: com.takerok75
+  deploymentTarget:
+    iOS: 15.0
+
+targets:
+  TaneSen:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.takerok75.tanesen
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: TaneSen
+        UILaunchStoryboardName: LaunchScreen
+        UIMainStoryboardFile: Main
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight 
